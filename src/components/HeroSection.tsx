@@ -122,7 +122,7 @@ const HeroSection = () => {
       </p>
 
       <div className="w-full px-0 md:px-2 relative z-10">
-        <div className="flex flex-col gap-8 max-w-4xl">
+        <div className="flex flex-col gap-5 sm:gap-8 max-w-4xl">
 
           {/* Label */}
           <span
@@ -142,7 +142,7 @@ const HeroSection = () => {
           <h1
             className="font-bold"
             style={{
-              fontSize: "clamp(2.8rem, 7vw, 5rem)",
+              fontSize: "clamp(1.9rem, 7vw, 5rem)",
               lineHeight: 1.15,
               color: "#ffffff",
               textShadow: "0 2px 30px rgba(0,0,0,1), 0 0 60px rgba(0,0,0,0.8)",
@@ -177,10 +177,10 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-2 flex flex-wrap gap-4">
+          <div className="mt-2 flex flex-wrap gap-3 sm:gap-4">
             <MagnetButton
               href="#projects"
-              className="px-8 py-4 text-white font-bold rounded-xl"
+              className="px-5 sm:px-8 py-3 sm:py-4 text-white font-bold rounded-xl text-center"
               style={{
                 background: "rgba(110,86,207,0.9)",
                 boxShadow: "0 0 28px rgba(110,86,207,0.6), 0 4px 15px rgba(0,0,0,0.5)",
@@ -195,7 +195,7 @@ const HeroSection = () => {
               href="/media/Aryan_Singh_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 font-bold rounded-xl"
+              className="px-5 sm:px-8 py-3 sm:py-4 font-bold rounded-xl text-center"
               style={{
                 background: "rgba(255,255,255,0.08)",
                 border: "1.5px solid rgba(255,255,255,0.5)",
@@ -209,7 +209,7 @@ const HeroSection = () => {
 
             <MagnetButton
               href="#contact"
-              className="px-8 py-4 font-bold rounded-xl"
+              className="px-5 sm:px-8 py-3 sm:py-4 font-bold rounded-xl text-center"
               style={{
                 background: "rgba(255,255,255,0.08)",
                 border: "1.5px solid rgba(255,255,255,0.3)",

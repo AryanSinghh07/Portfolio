@@ -84,10 +84,10 @@ const Resume = () => {
         <div style={{ position: "absolute", bottom: "20%", right: "15%", width: 400, height: 300, background: "radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%)", filter: "blur(60px)" }} />
       </div>
 
-      <div style={{ position: "relative", zIndex: 1, maxWidth: 900, margin: "0 auto", padding: "120px 24px 80px" }}>
+      <div style={{ position: "relative", zIndex: 1, maxWidth: 900, margin: "0 auto", padding: "clamp(80px, 15vw, 120px) clamp(12px, 4vw, 24px) 60px" }}>
 
         {/* ── Header ──────────────────────────────────────────── */}
-        <motion.div {...fadeUp(0)} style={{ ...card, padding: "40px 40px 36px", marginBottom: 28, position: "relative", overflow: "hidden" }}>
+        <motion.div {...fadeUp(0)} style={{ ...card, padding: "clamp(20px, 5vw, 40px) clamp(16px, 5vw, 40px) 36px", marginBottom: 28, position: "relative", overflow: "hidden" }}>
           {/* Purple bar */}
           <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: "linear-gradient(to right, #7c3aed, #a78bfa, #c4b5fd, transparent)" }} />
 
@@ -189,12 +189,12 @@ const Resume = () => {
           <iframe
             src="/media/Aryan_Singh_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
             title="Aryan Singh Resume"
-            style={{ width: "100%", height: 780, border: "none", display: "block", background: "#0d0d1a" }}
+            style={{ width: "100%", height: "min(780px, 65vh)", border: "none", display: "block", background: "#0d0d1a" }}
           />
         </motion.div>
 
         {/* ── Skills ──────────────────────────────────────────── */}
-        <motion.div {...fadeUp(0.06)} style={{ ...card, padding: "32px 36px", marginBottom: 28 }}>
+        <motion.div {...fadeUp(0.06)} style={{ ...card, padding: "clamp(20px, 4vw, 32px) clamp(14px, 4vw, 36px)", marginBottom: 28 }}>
           <SectionLabel icon={<Code2 size={15} />} title="Technical Skills" />
           <div className="flex flex-col gap-5 mt-5">
             {skills.map(({ cat, Icon, color, items }) => (
@@ -218,7 +218,7 @@ const Resume = () => {
         </motion.div>
 
         {/* ── Projects ────────────────────────────────────────── */}
-        <motion.div {...fadeUp(0.1)} style={{ ...card, padding: "32px 36px", marginBottom: 28 }}>
+        <motion.div {...fadeUp(0.1)} style={{ ...card, padding: "clamp(20px, 4vw, 32px) clamp(14px, 4vw, 36px)", marginBottom: 28 }}>
           <SectionLabel icon={<Code2 size={15} />} title="Projects" />
           <div className="grid sm:grid-cols-2 gap-5 mt-5">
             {projects.map((p, i) => (
@@ -253,7 +253,7 @@ const Resume = () => {
         </motion.div>
 
         {/* ── Achievements ────────────────────────────────────── */}
-        <motion.div {...fadeUp(0.14)} style={{ ...card, padding: "32px 36px", marginBottom: 28 }}>
+        <motion.div {...fadeUp(0.14)} style={{ ...card, padding: "clamp(20px, 4vw, 32px) clamp(14px, 4vw, 36px)", marginBottom: 28 }}>
           <SectionLabel icon={<Trophy size={15} />} title="Achievements" />
           <div className="flex flex-col gap-3 mt-5">
             {achievements.map((a, i) => {
@@ -282,7 +282,7 @@ const Resume = () => {
         </motion.div>
 
         {/* ── Education ───────────────────────────────────────── */}
-        <motion.div {...fadeUp(0.18)} style={{ ...card, padding: "32px 36px", marginBottom: 28 }}>
+        <motion.div {...fadeUp(0.18)} style={{ ...card, padding: "clamp(20px, 4vw, 32px) clamp(14px, 4vw, 36px)", marginBottom: 28 }}>
           <SectionLabel icon={<GraduationCap size={15} />} title="Education" />
           <div className="flex items-start gap-5 mt-5 p-5 rounded-xl"
             style={{ background: "rgba(255,255,255,0.02)", border: "1.5px solid rgba(110,86,207,0.2)" }}>
@@ -319,7 +319,7 @@ const Resume = () => {
         </motion.div>
 
         {/* ── Languages ───────────────────────────────────────── */}
-        <motion.div {...fadeUp(0.22)} style={{ ...card, padding: "28px 36px", marginBottom: 40 }}>
+        <motion.div {...fadeUp(0.22)} style={{ ...card, padding: "clamp(18px, 4vw, 28px) clamp(14px, 4vw, 36px)", marginBottom: 40 }}>
           <SectionLabel icon={<Star size={15} />} title="Languages" />
           <div className="flex gap-4 mt-4">
             {[["English", "Professional"], ["Hindi", "Native"]].map(([lang, level]) => (

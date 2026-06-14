@@ -134,7 +134,7 @@ const AboutSection = () => {
 
           {/* Photo */}
           <motion.div variants={fadeUp} custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <div className="relative max-w-sm mx-auto lg:mx-0">
+            <div className="relative max-w-sm mx-auto lg:mx-0 pb-8 pr-6 sm:pr-0 sm:pb-0">
               {/* Main photo */}
               <div className="rounded-3xl overflow-hidden" style={{ border: "1px solid rgba(110,86,207,0.25)" }}>
                 <img src="/media/aryan2.jpg" alt="Aryan Singh"
@@ -148,7 +148,7 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="absolute -bottom-6 -right-6 px-5 py-4 rounded-2xl"
+                className="absolute -bottom-3 right-0 sm:-bottom-6 sm:-right-6 px-4 sm:px-5 py-3 sm:py-4 rounded-2xl"
                 style={{
                   background: "rgba(10,10,22,0.9)",
                   backdropFilter: "blur(16px)",
@@ -188,17 +188,17 @@ const AboutSection = () => {
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4 mt-2">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-2">
               {stats.map((s, i) => (
                 <motion.div key={i}
                   initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }} transition={{ delay: 0.3 + i * 0.1, duration: 0.5 }}
-                  className="flex flex-col items-center justify-center py-5 rounded-2xl text-center"
+                  className="flex flex-col items-center justify-center py-3 sm:py-5 px-1 rounded-2xl text-center"
                   style={{ background: "rgba(255,255,255,0.03)", border: "1.5px solid rgba(110,86,207,0.35)" }}
                 >
-                  <div className="mb-2" style={{ color: "#a78bfa" }}>{s.icon}</div>
-                  <div className="text-2xl font-black mb-0.5" style={{ color: "#f0f0ff" }}>{s.value}</div>
-                  <div className="text-xs" style={{ color: "#94a3b8" }}>{s.label}</div>
+                  <div className="mb-1.5" style={{ color: "#a78bfa" }}>{s.icon}</div>
+                  <div className="text-lg sm:text-2xl font-black mb-0.5" style={{ color: "#f0f0ff" }}>{s.value}</div>
+                  <div className="text-xs" style={{ color: "#94a3b8", fontSize: "clamp(9px, 2.5vw, 12px)" }}>{s.label}</div>
                 </motion.div>
               ))}
             </div>

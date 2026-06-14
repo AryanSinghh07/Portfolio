@@ -300,11 +300,11 @@ const ProjectsSection = () => {
 
       {/* Project details modal */}
       <Dialog open={!!selected} onOpenChange={open => { if (!open) { setSelected(null); setLightboxIdx(null); } }}>
-        <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden flex flex-col"
+        <DialogContent className="w-[95vw] max-w-4xl max-h-[90vh] p-0 overflow-hidden flex flex-col"
           style={{ background: '#0d0d1a', border: '1.5px solid rgba(110,86,207,0.3)', borderRadius: '20px' }}>
 
           {/* Modal header */}
-          <div className="flex items-start justify-between p-6 shrink-0"
+          <div className="flex items-start justify-between px-4 sm:px-6 py-4 sm:py-6 shrink-0"
             style={{ borderBottom: '1px solid rgba(110,86,207,0.15)' }}>
             <div>
               <span className="text-xs font-mono tracking-widest uppercase mb-1 block" style={{ color: '#a78bfa' }}>Project</span>
@@ -322,7 +322,7 @@ const ProjectsSection = () => {
           </div>
 
           {/* Scrollable body */}
-          <div className="overflow-y-auto flex-1 p-6 space-y-6">
+          <div className="overflow-y-auto flex-1 p-4 sm:p-6 space-y-6">
 
             {/* Image gallery */}
             {selected?.images && selected.images.length > 0 && (

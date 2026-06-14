@@ -235,7 +235,7 @@ const ContactSection = () => {
 
           {/* Right — form */}
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1.6}
-            className="lg:col-span-3 p-8 rounded-2xl"
+            className="lg:col-span-3 p-5 sm:p-8 rounded-2xl"
             style={{ background: 'rgba(255,255,255,0.03)', border: '1.5px solid rgba(110,86,207,0.2)' }}>
 
             <h3 className="text-xl font-bold mb-6" style={{ color: '#f0f0ff' }}>Send a Message</h3>

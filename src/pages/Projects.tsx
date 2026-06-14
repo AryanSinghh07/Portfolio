@@ -246,7 +246,7 @@ const Projects = () => {
       </div>
 
       {/* ── Header ──────────────────────────────────────────── */}
-      <div style={{ position: 'relative', zIndex: 1, padding: '120px 0 48px' }}>
+      <div style={{ position: 'relative', zIndex: 1, padding: 'clamp(80px, 15vw, 120px) 0 48px' }}>
         <div className="max-w-7xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }}>
             <Link to="/" className="inline-flex items-center gap-2 mb-10 text-sm font-medium transition-colors duration-200"
@@ -317,7 +317,7 @@ const Projects = () => {
           {selected && (
             <>
               {/* Modal header */}
-              <div className="flex items-center justify-between px-7 py-5 shrink-0"
+              <div className="flex items-center justify-between px-4 sm:px-7 py-4 sm:py-5 shrink-0"
                 style={{ borderBottom: '1px solid rgba(110,86,207,0.18)', background: 'rgba(255,255,255,0.02)' }}>
                 <div>
                   <p className="font-mono text-xs tracking-widest uppercase mb-1"
@@ -338,7 +338,7 @@ const Projects = () => {
 
                 {/* Screenshot gallery */}
                 {selected.images.length > 0 && (
-                  <div className="px-7 pt-6 pb-2">
+                  <div className="px-4 sm:px-7 pt-6 pb-2">
                     <p className="text-xs font-mono tracking-widest uppercase mb-3" style={{ color: '#475569', letterSpacing: '0.16em' }}>Screenshots</p>
                     <div className="relative">
                       <div ref={galleryRef}
@@ -365,14 +365,14 @@ const Projects = () => {
                       {/* Prev/Next */}
                       {currentImg > 0 && (
                         <button onClick={() => scrollToImg(currentImg - 1)}
-                          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
+                          className="absolute left-1 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
                           style={{ background: 'rgba(110,86,207,0.8)', border: '1px solid rgba(196,181,253,0.3)', color: '#fff' }}>
                           <ChevronLeft size={16} />
                         </button>
                       )}
                       {currentImg < selected.images.length - 1 && (
                         <button onClick={() => scrollToImg(currentImg + 1)}
-                          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
+                          className="absolute right-1 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
                           style={{ background: 'rgba(110,86,207,0.8)', border: '1px solid rgba(196,181,253,0.3)', color: '#fff' }}>
                           <ChevronRight size={16} />
                         </button>
@@ -391,7 +391,7 @@ const Projects = () => {
                 )}
 
                 {/* Info cards */}
-                <div className="grid sm:grid-cols-2 gap-4 px-7 pt-5 pb-2">
+                <div className="grid sm:grid-cols-2 gap-4 px-4 sm:px-7 pt-5 pb-2">
                   {/* Overview */}
                   <div className="p-5 rounded-xl" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(110,86,207,0.18)' }}>
                     <div className="flex items-center gap-2 mb-3">
@@ -416,7 +416,7 @@ const Projects = () => {
                 </div>
 
                 {/* Features */}
-                <div className="px-7 pt-2 pb-7">
+                <div className="px-4 sm:px-7 pt-2 pb-7">
                   <div className="p-5 rounded-xl" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(110,86,207,0.18)' }}>
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: `${selected.accent}20` }}>

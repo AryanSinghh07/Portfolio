@@ -146,7 +146,7 @@ const Navbar = () => {
                 transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute right-0 mt-3"
                 style={{
-                  width: "260px",
+                  width: "min(260px, calc(100vw - 32px))",
                   background: "rgba(8,8,20,0.96)",
                   backdropFilter: "blur(24px)",
                   WebkitBackdropFilter: "blur(24px)",
