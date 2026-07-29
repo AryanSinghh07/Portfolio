@@ -114,7 +114,7 @@ export default function Nav() {
         <div className="nav-right">
           <div className="nav-meta">
             <span className="nav-dot" />
-            Noida — {time} IST
+            {profile.location} — {time} IST
           </div>
           <button
             className={`nav-burger ${open ? 'is-open' : ''}`}

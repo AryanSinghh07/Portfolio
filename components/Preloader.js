@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { profile } from '@/lib/data';
 
 export default function Preloader({ onComplete }) {
   const rootRef = useRef(null);
@@ -83,7 +84,7 @@ export default function Preloader({ onComplete }) {
       </div>
       <div className="preloader-foot">
         <span>Portfolio © 2026</span>
-        <span>Noida, India</span>
+        <span>{profile.location}</span>
       </div>
     </div>
   );
