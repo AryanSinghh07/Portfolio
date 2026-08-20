@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(233,79,29,0.16)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="360" fill="#141310"/>
+  <rect width="480" height="360" fill="url(#grid)"/>
+  <text x="32" y="52" font-family="Arial, sans-serif" font-size="13" letter-spacing="2" fill="#e94f1d">FINALIST</text>
+  <text x="32" y="200" font-family="Arial, sans-serif" font-weight="bold" font-size="34" fill="#f1ece2">Code Astraa</text>
+  <text x="32" y="240" font-family="Arial, sans-serif" font-weight="bold" font-size="34" fill="#f1ece2">Hackathon <tspan fill="#e94f1d">2025</tspan></text>
+  <text x="32" y="322" font-family="Arial, sans-serif" font-size="12" fill="rgba(241,236,226,0.45)">Replace this file with your real photo/certificate</text>
+</svg>

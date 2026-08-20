@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#141310"/>
+  <g stroke="#e94f1d" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="6 8">
+    <line x1="200" y1="0" x2="200" y2="900"/>
+    <line x1="480" y1="0" x2="480" y2="900"/>
+    <line x1="760" y1="0" x2="760" y2="900"/>
+    <line x1="1040" y1="0" x2="1040" y2="900"/>
+    <line x1="1320" y1="0" x2="1320" y2="900"/>
+    <line x1="0" y1="180" x2="1600" y2="180"/>
+    <line x1="0" y1="420" x2="1600" y2="420"/>
+    <line x1="0" y1="660" x2="1600" y2="660"/>
+  </g>
+  <g fill="none" stroke="#e94f1d" stroke-opacity="0.35" stroke-dasharray="5 9">
+    <circle cx="1220" cy="260" r="180"/>
+    <circle cx="1220" cy="260" r="120"/>
+    <circle cx="1220" cy="260" r="60"/>
+  </g>
+  <text x="110" y="470" font-family="Arial, sans-serif" font-size="130" font-weight="800" fill="#e94f1d" letter-spacing="-3">GOPALAN AI</text>
+  <text x="114" y="550" font-family="Arial, sans-serif" font-size="40" fill="#f1ece2" fill-opacity="0.75">Animal Type Classification — Smart India Hackathon 2025</text>
+  <text x="114" y="620" font-family="Arial, sans-serif" font-size="28" fill="#f1ece2" fill-opacity="0.4" letter-spacing="6">RASHTRIYA GOKUL MISSION</text>
+</svg>
